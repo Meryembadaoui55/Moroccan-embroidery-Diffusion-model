@@ -30,3 +30,7 @@ In this part , you need to create and load a session with the name of your sessi
 ## Instance Images
  Once your session was created you need to upload your images , then add captions (optional)
  
+# Fine-Tunning : 
+
+
+
