@@ -3,9 +3,9 @@ This repository contains code for a machine learning model that generates Morocc
 # About the project : 
 This project focuses on generating new images containing Moroccan embroidery, called "Tarz" in Moroccan dialect. The model used in this project was fine-tuned using the Fast-Stable-Diffusion Notebooks and the AUTOMATIC1111 and DreamBooth libraries then building an interface using gradio 
 
-The fine-tuned model is based on a Generative Adversarial Network (GAN) architecture, which has been shown to produce high-quality images with impressive realism. With this model, we hope to generate new tarz designs that can be used in a variety of applications, such as fashion design, home decor, and more.
+The fine-tuned model is based on a Generative Adversarial Network (GAN) architecture, which has been shown to produce high-quality images with impressive realism. With this model, we hope to generate new Tarz designs that can be used in a variety of applications, such as fashion design, home decor, and more.
 
-The model was trained on a large dataset of existing tarz designs, which were carefully curated to ensure diversity and quality. The training process took several hours, during which the model learned to recognize patterns and generate new designs based on them.
+The model was trained on a dataset of 212 Tarz images of existing tarz designs, which were carefully curated to ensure diversity and quality. The training process took several hours, during which the model learned to recognize patterns and generate new designs based on them.
 
 Once the training was complete, we evaluated the model on a separate validation dataset to ensure that it was able to generate high-quality and diverse designs. We also implemented several techniques to prevent overfitting and ensure that the model was robust and generalizable
 (![teaser_static](https://user-images.githubusercontent.com/93876670/236652469-6b3d0d97-f3bf-41ff-87e1-a1aa282f9188.jpg)
@@ -31,6 +31,10 @@ In this part , you need to create and load a session with the name of your sessi
  Once your session was created you need to upload your images , then add captions (optional)
  
 # Fine-Tunning : 
+Initially, we attempted to fine-tune the model using 13 images along with their respective text captions. However, the performance was not satisfactory. To improve the results, we increased the number of images to 212 and provided the model with around 30 text captions. The captions included descriptions of Moroccan embroidery "Tarz" from Fez/Rabat or Amazigh on various items such as T-shirts, napkins, tablecloths, and Moroccan Caftan. As a result, we achieved a better outcome this time.
+
+# Results obtained with 13 images:
+# Results obtained with 212 images:
 
 
 
