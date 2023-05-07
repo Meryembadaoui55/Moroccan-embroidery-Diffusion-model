@@ -37,6 +37,8 @@ To utilize this model, you will first need to execute the first two cells of the
 To make the process user-friendly for those who are not accustomed to complex interfaces, we have designed a simple and easy-to-use interface that generates images by allowing users to check and select their desired options.
 ![Screenshot_851](https://user-images.githubusercontent.com/93876670/236658844-5f23ef2e-db0a-4a4f-a37c-143bf4f5aea3.png)
 
+# Resources :
+Link to the drive where the fine-tuned model is saved : https://drive.google.com/drive/folders/17QyMYo6zaVPiIN6fev0PPBfC2_fqWeLu?usp=share_link
 
 ## About Fast-stable-Diffusion :
 ### Fast stable diffusion is a powerful image processing technique used to enhance and manipulate images. It involves iteratively smoothing an image by diffusing it over time, with a diffusion coefficient that depends on the image gradient. By using a fast and stable diffusion algorithm, images can be modified in various ways, such as removing noise, sharpening edges, and even generating new images with similar features.
