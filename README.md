@@ -13,8 +13,7 @@ The fine-tuned model is based on a Generative Adversarial Network (GAN) architec
 The model was trained on a dataset of 212 Tarz images of existing tarz designs, which were carefully curated to ensure diversity and quality. The training process took several hours, during which the model learned to recognize patterns and generate new designs based on them.
 
 Once the training was complete, we evaluated the model on a separate validation dataset to ensure that it was able to generate high-quality and diverse designs. We also implemented several techniques to prevent overfitting and ensure that the model was robust and generalizable
-(![teaser_static](https://user-images.githubusercontent.com/93876670/236652469-6b3d0d97-f3bf-41ff-87e1-a1aa282f9188.jpg)
-# Fine-Tunning : 
+![Screenshot_850](https://user-images.githubusercontent.com/93876670/236659507-c1abdb46-9465-4085-b324-49558113dcb4.png)# Fine-Tunning : 
 Initially, we attempted to fine-tune the model using 13 images along with their respective text captions. However, the performance was not satisfactory. To improve the results, we increased the number of images to 212 and provided the model with around 30 text captions. The captions included descriptions of Moroccan embroidery "Tarz" from Fez/Rabat or Amazigh on various items such as T-shirts, napkins, tablecloths, and Moroccan Caftan. As a result, we achieved a better outcome this time.
 
 # Results obtained with 13 images:
@@ -54,10 +53,11 @@ Finally, it sets some environment variables to suppress warnings and optimize me
 Now , we're supposed to download and load a pre-trained model for image generation using Stable Diffusion ; By providing options for downloading different versions of the pre-trained model, and for loading a custom model from Hugging Face.We used  the wget package to download files, and the subprocess package to run shell commands.
 ## Dreamboth :
 In this part , you need to create and load a session with the name of your session If a session link is provided, it downloads and extracts it. If a checkpoint model is found in the session directory, it loads it. Otherwise, it asks the user to select an intermediary checkpoint to use. Finally, it uses the selected or loaded model to run a script that converts it into a different format.
-## Instance Images
- Once your session was created you need to upload your images , then add captions (optional)
- 
-# 
+
+# controlNet:
+ControlNet is a neural network structure used in image-to-image generation that has greatly enhanced AI image generation by providing extra conditions to control diffusion models. This has been a game-changer in the field of AI Image generation and has enabled unprecedented levels of control to Stable Diffusion.
+
+One of the most revolutionary aspects of ControlNet is its solution to the problem of spatial consistency, which previously had no efficient solution for instructing an AI model on which parts of an input image to keep. ControlNet addresses this by introducing an innovative method that allows Stable Diffusion models to use additional input conditions to precisely guide the model on what actions to take.
 
 
 
