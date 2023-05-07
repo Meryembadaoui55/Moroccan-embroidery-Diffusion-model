@@ -1,7 +1,12 @@
 # Moroccan-embroidery-Diffusion-model
 This repository contains code for a machine learning model that generates Moroccan embroidery patterns using a diffusion model. The model was trained on a dataset of traditional Moroccan embroidery patterns and uses PyTorch to generate new patterns with similar style and motifs. 
 # About the project : 
-This project focuses on generating new images containing Moroccan embroidery, called "Tarz" in Moroccan dialect. The model used in this project was fine-tuned using the Fast-Stable-Diffusion Notebooks and the AUTOMATIC1111 and DreamBooth libraries then building an interface using gradio 
+
+This project focuses on generating new images containing Moroccan embroidery, called "Tarz" in Moroccan dialect. The model used in this project was fine-tuned using the Fast-Stable-Diffusion Notebooks and the AUTOMATIC1111 and DreamBooth libraries then building an interface using gradio.
+
+We believe that this can be used in fashion and textile design to generate new designs and patterns that incorporate Moroccan embroidery. Designers and manufacturers can use the model to create new images of textiles and clothing items that feature Moroccan embroidery, which can serve as a source of inspiration.
+
+Another potential application of the model is in cultural preservation and heritage projects. It can automatically identify and catalog Moroccan embroidery patterns and designs, thereby documenting and preserving the rich cultural heritage of Moroccan embroidery for future generations.
 
 The fine-tuned model is based on a Generative Adversarial Network (GAN) architecture, which has been shown to produce high-quality images with impressive realism. With this model, we hope to generate new Tarz designs that can be used in a variety of applications, such as fashion design, home decor, and more.
 
@@ -9,6 +14,28 @@ The model was trained on a dataset of 212 Tarz images of existing tarz designs, 
 
 Once the training was complete, we evaluated the model on a separate validation dataset to ensure that it was able to generate high-quality and diverse designs. We also implemented several techniques to prevent overfitting and ensure that the model was robust and generalizable
 (![teaser_static](https://user-images.githubusercontent.com/93876670/236652469-6b3d0d97-f3bf-41ff-87e1-a1aa282f9188.jpg)
+# Fine-Tunning : 
+Initially, we attempted to fine-tune the model using 13 images along with their respective text captions. However, the performance was not satisfactory. To improve the results, we increased the number of images to 212 and provided the model with around 30 text captions. The captions included descriptions of Moroccan embroidery "Tarz" from Fez/Rabat or Amazigh on various items such as T-shirts, napkins, tablecloths, and Moroccan Caftan. As a result, we achieved a better outcome this time.
+
+# Results obtained with 13 images:
+![image](https://user-images.githubusercontent.com/93876670/236658751-36b84574-7920-4233-83d9-423aa991ce0e.png)
+![image](https://user-images.githubusercontent.com/93876670/236658779-fda8f190-5ed7-40be-8464-58914dd044e0.png)
+
+# Results obtained with 212 images:
+![00000-1903957878](https://user-images.githubusercontent.com/93876670/236658656-e8b886b8-25c2-44cd-9ce7-f351a0121054.png)
+![00002-2737398560](https://user-images.githubusercontent.com/93876670/236658662-68f2aa16-319f-4e8b-895d-ae8a99530cf3.png)
+![00003-2967774769](https://user-images.githubusercontent.com/93876670/236658666-2cd2b415-0ef5-4dc9-ba32-c00d3dd048d8.png)
+![00005-1248253454](https://user-images.githubusercontent.com/93876670/236658669-e3397138-c999-4c30-8eca-b097346fa9fd.png)
+![image](https://user-images.githubusercontent.com/93876670/236658689-8e8818d1-a118-4bd2-b6e3-9468cf417e34.png)
+![image](https://user-images.githubusercontent.com/93876670/236658699-d0ade024-cc5a-46b8-aa71-deadb3e03f60.png)
+
+# Demo :
+To utilize this model, you will first need to execute the first two cells of the Colab notebook. Next, run the cell related to creating a session and enter "Tarz" into the "Previous_session" field. Then, insert the link to the Google Drive folder where the checkpoints for Tarz are saved. After that, run the cell, and a Gradio interface should appear. Click on the link in the output to access the interface, where you can choose to play with the different options provided by the interface, including using image to image.
+
+To make the process user-friendly for those who are not accustomed to complex interfaces, we have designed a simple and easy-to-use interface that generates images by allowing users to check and select their desired options.
+![Screenshot_851](https://user-images.githubusercontent.com/93876670/236658844-5f23ef2e-db0a-4a4f-a37c-143bf4f5aea3.png)
+
+
 ## About Fast-stable-Diffusion :
 ### Fast stable diffusion is a powerful image processing technique used to enhance and manipulate images. It involves iteratively smoothing an image by diffusing it over time, with a diffusion coefficient that depends on the image gradient. By using a fast and stable diffusion algorithm, images can be modified in various ways, such as removing noise, sharpening edges, and even generating new images with similar features.
 ## About Dreamboth :
@@ -30,11 +57,7 @@ In this part , you need to create and load a session with the name of your sessi
 ## Instance Images
  Once your session was created you need to upload your images , then add captions (optional)
  
-# Fine-Tunning : 
-Initially, we attempted to fine-tune the model using 13 images along with their respective text captions. However, the performance was not satisfactory. To improve the results, we increased the number of images to 212 and provided the model with around 30 text captions. The captions included descriptions of Moroccan embroidery "Tarz" from Fez/Rabat or Amazigh on various items such as T-shirts, napkins, tablecloths, and Moroccan Caftan. As a result, we achieved a better outcome this time.
-
-# Results obtained with 13 images:
-# Results obtained with 212 images:
+# 
 
 
 
