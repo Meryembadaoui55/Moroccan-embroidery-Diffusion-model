@@ -13,7 +13,10 @@ The fine-tuned model is based on a Generative Adversarial Network (GAN) architec
 The model was trained on a dataset of 212 Tarz images of existing tarz designs, which were carefully curated to ensure diversity and quality. The training process took several hours, during which the model learned to recognize patterns and generate new designs based on them.
 
 Once the training was complete, we evaluated the model on a separate validation dataset to ensure that it was able to generate high-quality and diverse designs. We also implemented several techniques to prevent overfitting and ensure that the model was robust and generalizable
-![Screenshot_850](https://user-images.githubusercontent.com/93876670/236659507-c1abdb46-9465-4085-b324-49558113dcb4.png)# Fine-Tunning : 
+![Screenshot_850](https://user-images.githubusercontent.com/93876670/236659507-c1abdb46-9465-4085-b324-49558113dcb4.png)
+
+
+# Fine-Tunning : 
 Initially, we attempted to fine-tune the model using 13 images along with their respective text captions. However, the performance was not satisfactory. To improve the results, we increased the number of images to 212 and provided the model with around 30 text captions. The captions included descriptions of Moroccan embroidery "Tarz" from Fez/Rabat or Amazigh on various items such as T-shirts, napkins, tablecloths, and Moroccan Caftan. As a result, we achieved a better outcome this time.
 
 # Results obtained with 13 images:
