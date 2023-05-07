@@ -1,7 +1,7 @@
 # Moroccan-embroidery-Diffusion-model
 This repository contains code for a machine learning model that generates Moroccan embroidery patterns using a diffusion model. The model was trained on a dataset of traditional Moroccan embroidery patterns and uses PyTorch to generate new patterns with similar style and motifs. 
 # About the project : 
-This project focuses on generating new images containing Moroccan embroidery, specifically tarz. The model used in this project was fine-tuned using the Fast-Stable-Diffusion Notebooks and the AUTOMATIC1111 and DreamBooth libraries then building an interface using gradio 
+This project focuses on generating new images containing Moroccan embroidery, called "Tarz" in Moroccan dialect. The model used in this project was fine-tuned using the Fast-Stable-Diffusion Notebooks and the AUTOMATIC1111 and DreamBooth libraries then building an interface using gradio 
 
 The fine-tuned model is based on a Generative Adversarial Network (GAN) architecture, which has been shown to produce high-quality images with impressive realism. With this model, we hope to generate new tarz designs that can be used in a variety of applications, such as fashion design, home decor, and more.
 
